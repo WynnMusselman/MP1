@@ -8,9 +8,6 @@
     width: 80vw;
     margin: 0 auto;
     /*text-align: center;*/
-
-    /*by default, this is the text color*/
-    color: #172B3A;
 }
 
 /*fonts*/
@@ -36,13 +33,28 @@ header{
     text-align: center;
 }
 
-header h1{
+header p{
+    color: #F0F4EF;
+}
+
+/*text styling*/
+h1{
     font: calc(2px + 4vw) damion, sans-serif, sans;
 }
 
+
 h2{
-    font: calc(2px + 3vw) damion, sans-serif, sans;
+    font: calc(2px + 3.3vw) damion, sans-serif, sans;
     padding: 3%;
+}
+
+h3{
+    font-size: calc(2px + 2.3vw);
+}
+
+p{
+    color: #172B3A;
+    font-size: calc(2px + 1.4vw);
 }
 
 /*creates a two column layout */
@@ -153,16 +165,19 @@ label{
     font: calc(2px + 1.4vw) damion, sans-serif, sans;
 }
 
+input::placeholder{
+    visibility: hidden;
+}
+
 /*footer*/
 footer{
     background-color: #344966;
-    color: #F0F4EF;
     text-align: center;
 
     padding: 1%;
 }
 
-footer a{
+footer a, footer p{
      color: #F0F4EF;
 }
 
@@ -191,10 +206,33 @@ footer a{
         width: 100%;
     }
 
+    /*two column display*/
     .two-col{
         display: flex;
         flex-direction: column;
     }
+
+    /*calculator*/
+    .inner-col{
+        flex-direction: row;
+    }
+
+    label{
+        display: none;
+    }
+
+    input{
+        margin: 2%;
+        padding: 4%;
+    }
+
+    input::placeholder{
+        visibility: visible;
+        font: calc(2px + 1.8vw) damion, sans-serif, sans;
+        color: #344966;
+    }
+
+
 
 
 }
