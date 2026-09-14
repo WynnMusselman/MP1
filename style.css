@@ -27,7 +27,7 @@
     src: url(src/Dancing_Script/DancingScript-VariableFont_wght.ttf);
 }
 
-
+/*header*/
 header{
     background-color: #344966;
     color: #F0F4EF;
@@ -42,6 +42,7 @@ header h1{
 
 h2{
     font: calc(2px + 3vw) damion, sans-serif, sans;
+    padding: 3%;
 }
 
 /*creates a two column layout */
@@ -53,6 +54,7 @@ h2{
     width: 100%;
 }
 
+/*nav*/
 #nav-main-col{
     display: flex;
     flex-direction: row;
@@ -74,7 +76,7 @@ nav ul{
 
 nav ul li{
     background-color: #B4CDED;
-    border: 2px solid #344966;
+    border: 2px dashed #344966;
     text-align: center;
 
     /*auto - centers list items*/
@@ -88,6 +90,7 @@ nav ul li a{
     font: calc(2px + 1.4vw) damion, sans-serif, sans;
 }
 
+/*main*/
 main{
     width: 75%;
     /*padding: 3%;*/
@@ -101,6 +104,20 @@ main img{
 
 main p{
     padding: 2%;
+}
+
+/*styles sections of information on different pages*/
+.info-section{
+    margin: 3%;
+}
+
+.info-section h3{
+    padding: 0.5%;
+    color: #344966;
+}
+
+.info-section p{
+    padding: 0.5%;
 }
 
 /*calculator section*/
@@ -136,6 +153,7 @@ label{
     font: calc(2px + 1.4vw) damion, sans-serif, sans;
 }
 
+/*footer*/
 footer{
     background-color: #344966;
     color: #F0F4EF;
