@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-body{
+.page-wrapper{
     background-color: #F0F4EF;
     width: 80vw;
     margin: 0 auto;
@@ -12,7 +12,6 @@ body{
     /*by default, this is the text color*/
     color: #172B3A;
 }
-
 
 
 header{
