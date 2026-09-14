@@ -13,6 +13,20 @@
     color: #172B3A;
 }
 
+/*fonts*/
+
+/*damion*/
+@font-face {
+    font-family: damion;
+    src: url(src/Damion/Damion-Regular.ttf);
+}
+
+/*dancing script*/
+@font-face {
+    font-family: dancing;
+    src: url(src/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
 
 header{
     background-color: #344966;
@@ -20,6 +34,14 @@ header{
 
     padding: 2%;
     text-align: center;
+}
+
+header h1{
+    font: calc(2px + 4vw) damion, sans-serif, sans;
+}
+
+h2{
+    font: calc(2px + 3vw) damion, sans-serif, sans;
 }
 
 /*creates a two column layout */
@@ -63,7 +85,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: #344966;
-    font-size: calc(2px + 1.4vw);
+    font: calc(2px + 1.4vw) damion, sans-serif, sans;
 }
 
 main{
@@ -79,6 +101,23 @@ main img{
 
 main p{
     padding: 2%;
+}
+
+/*calculator section*/
+.col-1{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.col-2{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+label{
+    font: calc(2px + 1.4vw) damion, sans-serif, sans;
 }
 
 footer{
