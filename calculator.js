@@ -1,5 +1,6 @@
 let num1;
 let num2;
+let result;
 let output = document.getElementById("output");
 
 function createNums(){
@@ -9,34 +10,44 @@ function createNums(){
 
 function doAdd(){
     createNums();
-    output.innerHTML = String(Number(num1) + Number(num2));
+    result = Number(num1) + Number(num2);
+    ifNegative(result);
+
+    output.innerHTML = String(result);
 }
 
 function doSub(){
     createNums();
-    output.innerHTML = String(Number(num1) - Number(num2));
+    result = Number(num1) - Number(num2);
+    ifNegative(result);
+    output.innerHTML = String(result);
 }
 
 
 function doMul(){
     createNums();
-    output.innerHTML = String(Number(num1) * Number(num2));
+    result = Number(num1) * Number(num2);
+    ifNegative(result);
+    output.innerHTML = String(result);
 }
 
 
 function doDiv(){
     createNums();
-    output.innerHTML = String(Number(num1) / Number(num2));
+    result = Number(num1) / Number(num2);
+    ifNegative(result);
+    output.innerHTML = String(result);
 }
 
 function doPow(){
     createNums();
-    let output_val = 1;
+    result = 1;
 
     for(let i = 0; i < num2; i++){
-         output_val = Number(num1) * Number(output_val)
+         result = Number(num1) * Number(result)
     }
-    output.innerHTML = String(output_val);
+    ifNegative(result);
+    output.innerHTML = String(result);
 }
 
 function doClear(){
@@ -45,4 +56,13 @@ function doClear(){
     num1.value = "";
     num2.value = "";
     output.innerHTML = "";
+}
+
+function ifNegative(value){
+    if(value < 0){
+        output.style.color = "red";
+    }
+    else{
+        output.style.color = "black";
+    }
 }
