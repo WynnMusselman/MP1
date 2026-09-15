@@ -30,7 +30,7 @@ header{
     color: #F0F4EF;
 
     padding: 2%;
-    text-align: center;
+    text-align: left;
 }
 
 header p{
@@ -76,7 +76,7 @@ p{
 
 nav{
     background-color: #BFCC94;
-    width: 25%;
+    width: 30%;
 }
 
 nav ul{
@@ -104,7 +104,7 @@ nav ul li a{
 
 /*main*/
 main{
-    width: 75%;
+    width: 70%;
     /*padding: 3%;*/
     text-align: center;
 }
@@ -181,9 +181,20 @@ footer a, footer p{
      color: #F0F4EF;
 }
 
-/*when the screen is shrunk*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 750px){
+    main{
+        width: 100%;
+    }
+}
 
+/*when the screen is shrunk*/
+@media screen and (max-width: 750px){
+
+
+    /*header*/
+    header{
+        text-align: center;
+    }
 
     /*navigation*/
     #nav-main-col{
@@ -192,14 +203,13 @@ footer a, footer p{
     }
 
     nav ul{
-        margin: 1%;
+        margin: 0 1%;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
     nav ul li{
-        padding: 2%;
-
+        padding: 1%;
     }
 
     nav, main{
@@ -231,10 +241,6 @@ footer a, footer p{
         font: calc(2px + 1.8vw) damion, sans-serif, sans;
         color: #344966;
     }
-
-
-
-
 }
 
 
