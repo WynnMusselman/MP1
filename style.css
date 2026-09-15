@@ -4,9 +4,9 @@
 }
 
 .page-wrapper{
-    background-color: #F0F4EF;
     width: 80vw;
     margin: 0 auto;
+    background-color: #F0F4EF;
 }
 
 /*fonts*/
@@ -100,7 +100,13 @@ nav ul li a{
 /*main*/
 main{
     width: 70%;
-    /*padding: 3%;*/
+
+    /*
+    I used min-height instead of height because height is more rigid and my content
+    was overflowing on some pages. Min-height just sets a floor value and allowed my
+    content to fill the page and not overflow
+    */
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -129,9 +135,8 @@ main p{
 
 /*calculator section*/
 .inner-col{
-    display: flex;
-    flex-direction: column;
-    margin: 2%;
+    display: block;
+    margin: auto 2%;
 }
 
 .inner-col input{
@@ -143,6 +148,7 @@ main p{
 
 .inner-col button{
     width: 8vw;
+    display: block;
     margin: 2%;
     padding: 2%;
 
@@ -157,6 +163,7 @@ main p{
 }
 
 label{
+    display: block;
     font: calc(2px + 1.4vw) damion, sans-serif, sans;
 }
 
