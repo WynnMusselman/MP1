@@ -59,7 +59,7 @@ p{
 .two-col{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -102,9 +102,9 @@ main{
     width: 70%;
 
     /*
-    I used min-height instead of height because height is more rigid and my content
-    was overflowing on some pages. Min-height just sets a floor value and allowed my
-    content to fill the page and not overflow
+        I used min-height instead of height because height is more rigid and my content
+        was overflowing on some pages. Min-height just sets a floor value and allowed my
+        content to fill the page and not overflow
     */
     min-height: 100vh;
     text-align: center;
@@ -135,7 +135,8 @@ main p{
 
 /*calculator section*/
 .inner-col{
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: auto 2%;
 }
 
@@ -148,7 +149,6 @@ main p{
 
 .inner-col button{
     width: 8vw;
-    display: block;
     margin: 2%;
     padding: 2%;
 
@@ -163,7 +163,6 @@ main p{
 }
 
 label{
-    display: block;
     font: calc(2px + 1.4vw) damion, sans-serif, sans;
 }
 
@@ -224,11 +223,13 @@ footer a, footer p{
     .two-col{
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     /*calculator*/
     .inner-col{
         flex-direction: row;
+        justify-content: center;
     }
 
     label{
@@ -237,7 +238,7 @@ footer a, footer p{
 
     input{
         margin: 2%;
-        padding: 4%;
+        padding: 5%;
     }
 
     input::placeholder{
