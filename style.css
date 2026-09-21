@@ -182,12 +182,6 @@ footer a, footer p{
      color: #F0F4EF;
 }
 
-@media screen and (max-width: 750px){
-    main{
-        width: 100%;
-    }
-}
-
 /*when the screen is shrunk*/
 @media screen and (max-width: 750px){
 
